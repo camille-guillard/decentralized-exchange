@@ -41,7 +41,7 @@ contract Pool {
         liquidityToken = new LiquidityToken(_liquidityTokenName, _liquiditySymbol);
     }
 
-    function addLiquidity(uint256 amountToken1, uint amountToken2) external {
+    function addLiquidity(uint256 amountToken1, uint256 amountToken2) external {
         // Calculating the number of liquidity to send to liquidity provider
         uint256 liquidity;
         uint256 totalSupplyLiquidityToken = liquidityToken.totalSupply();

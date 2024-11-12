@@ -10,9 +10,9 @@ deploy :
 npx hardhat ignition deploy ./ignition/modules/DecentralizedExchangeModule.js --network sepolia
 
 verify : 
-npx hardhat verify --network sepolia 0x85d7b91c9fAC0640788eC7fF7EA37033CE3ea97a
+npx hardhat verify --network sepolia 0x82B957A80277486a6c1D6C100B54f5a31e16610d
 
-etherscan : https://sepolia.etherscan.io/address/0x85d7b91c9fAC0640788eC7fF7EA37033CE3ea97a#code
+etherscan : https://sepolia.etherscan.io/address/0x82B957A80277486a6c1D6C100B54f5a31e16610d#code
 
 Tests tokens : 
 
