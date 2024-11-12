@@ -1,0 +1,271 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token1",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_token2",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "_liquidityTokenName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_liquiditySymbol",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AmountMustBeGreaterThan0",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ConstantformulaInconsistent",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FromTokenIsNotATokenOfThePool",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientBalanceOfFromToken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientBalanceOfToToken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotEnoughLiquidityToken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotTokensOfThePool",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TransferringToken1Failed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TransferringToken2Failed",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amountOut",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "tokenFrom",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "tokenTo",
+        "type": "address"
+      }
+    ],
+    "name": "Swap",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountToken1",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountToken2",
+        "type": "uint256"
+      }
+    ],
+    "name": "addLiquidity",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "constantK",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "fromToken",
+        "type": "address"
+      }
+    ],
+    "name": "estimateOutputAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "expectedAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "liquidityToken",
+    "outputs": [
+      {
+        "internalType": "contract LiquidityToken",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountOfLiquidity",
+        "type": "uint256"
+      }
+    ],
+    "name": "removeLiquidity",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "reserve1",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "reserve2",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "fromToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "toToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountOut",
+        "type": "uint256"
+      }
+    ],
+    "name": "swapTokens",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "token1",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "token2",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

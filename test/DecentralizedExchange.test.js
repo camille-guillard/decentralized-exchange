@@ -8,11 +8,11 @@ beforeEach(async function() {
     [owner, addr1, addr2, addr3] = await ethers.getSigners();
 
     const TestToken = await ethers.getContractFactory("TestToken");
-    token1Contract = await TestToken.connect(owner).deploy("token1", "T1");
+    token1Contract = await TestToken.connect(owner).deploy("token1", "T1", "10000000");
     await token1Contract.waitForDeployment();
     token1Address = await token1Contract.getAddress();
 
-    token2Contract = await TestToken.connect(owner).deploy("token2", "T2");
+    token2Contract = await TestToken.connect(owner).deploy("token2", "T2", "10000000");
     await token2Contract.waitForDeployment();
     token2Address = await token2Contract.getAddress();
 

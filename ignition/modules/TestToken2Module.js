@@ -7,7 +7,7 @@ module.exports = buildModule("TestToken2Module", (m) => {
 
   console.log("chainID : " + chainId);
 
-  const decentralizedExchangeModuleContract = m.contract("TestToken", ["Token2", "T2"], { id: "artemis2" });
+  const decentralizedExchangeModuleContract = m.contract("TestToken", ["Token2", "T2", "1000000000000000000000"], { id: "artemis" });
 
   return { decentralizedExchangeModuleContract };
 });

@@ -17,13 +17,13 @@ etherscan : https://sepolia.etherscan.io/address/0x82B957A80277486a6c1D6C100B54f
 Tests tokens : 
 
 npx hardhat ignition deploy ./ignition/modules/TestToken1Module.js --network sepolia
-npx hardhat verify --network sepolia 0x901d299316092Cb0573a765B2b04843CC1695E2F "Token1" "T1"
-https://sepolia.etherscan.io/address/0x901d299316092Cb0573a765B2b04843CC1695E2F#code
+npx hardhat verify --network sepolia 0xB77F002F4FcE14783fdCe03cA817c4C8a26D4d24 "Token1" "T1" "10000000000000000000000000"
+https://sepolia.etherscan.io/address/0xB77F002F4FcE14783fdCe03cA817c4C8a26D4d24#code
 
 npx hardhat ignition deploy ./ignition/modules/TestToken2Module.js --network sepolia
-npx hardhat verify --network sepolia 0x5ae272f49C0510C340C34bdD376Ce41f63E03135 "Token2" "T2"
-https://sepolia.etherscan.io/address/0x5ae272f49C0510C340C34bdD376Ce41f63E03135#code
+npx hardhat verify --network sepolia 0xB8eFD86853694b5C726Ba2bb83d7867047a0Ea11 "Token2" "T2" "10000000000000000000000000"
+https://sepolia.etherscan.io/address/0xB8eFD86853694b5C726Ba2bb83d7867047a0Ea11#code
 
 npx hardhat ignition deploy ./ignition/modules/TestToken3Module.js --network sepolia
-npx hardhat verify --network sepolia 0xa9d05a18713f28aAb9c304F75F4909dBBABD7cbc "Token3" "T3"
-https://sepolia.etherscan.io/address/0xa9d05a18713f28aAb9c304F75F4909dBBABD7cbc#code
+npx hardhat verify --network sepolia 0x04eA28993Ecd7AB8C463cC2C11ed380484Fb7e69 "Token3" "T3" "10000000000000000000000000"
+https://sepolia.etherscan.io/address/0x04eA28993Ecd7AB8C463cC2C11ed380484Fb7e69#code
